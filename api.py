@@ -1,4 +1,4 @@
-"""Модуль 19"""
+"""Модуль 24"""
 import json
 
 import requests
@@ -9,7 +9,7 @@ class PetFriends:
     """апи библиотека к веб приложению Pet Friends"""
 
     def __init__(self):
-        self.base_url = "https://petfriends1.herokuapp.com/"
+        self.base_url = "https://petfriends.skillfactory.ru/"
 
     def get_api_key(self, email: str, passwd: str) -> json:
         """Метод делает запрос к API сервера и возвращает статус запроса и результат в формате
@@ -60,6 +60,7 @@ class PetFriends:
             })
         headers = {'auth_key': auth_key['key'], 'Content-Type': data.content_type}
 
+
         res = requests.post(self.base_url + 'api/pets', headers=headers, data=data)
         status = res.status_code
         result = ""
@@ -96,6 +97,44 @@ class PetFriends:
             'name': name,
             'age': age,
             'animal_type': animal_type
+        }
+
+        res = requests.put(self.base_url + 'api/pets/' + pet_id, headers=headers, data=data)
+        status = res.status_code
+        result = ""
+        try:
+            result = res.json()
+        except json.decoder.JSONDecodeError:
+            result = res.text
+        return status, result
+    def add_new_pet_simple(self, auth_key: json, name: str, animal_type: str,
+                    age: str) -> json:
+        """Метод отправляет (постит) на сервер данные о добавляемом питомце и возвращает статус
+        запроса на сервер и результат в формате JSON с данными добавленного питомца(без использования фотографии)"""
+
+        data = MultipartEncoder(
+            fields={
+                'name': name,
+                'animal_type': animal_type,
+                'age': age,
+            })
+        headers = {'auth_key': auth_key['key'], 'Content-Type': data.content_type}
+
+        res = requests.post(self.base_url + 'api/create_pet_simple', headers=headers, data=data)
+        status = res.status_code
+        result = ""
+        try:
+            result = res.json()
+        except json.decoder.JSONDecodeError:
+            result = res.text
+        print(result)
+        return status, result
+    def set_photo(self, auth_key: json, pet_id, pet_photo) -> json:
+        """Метод добавляет фотографию к карточке питомца, возвращает статус запроса на сервер и результат в формате JSON"""
+
+        headers = {'auth_key': auth_key['key']}
+        data = {
+            'pet_photo': (pet_photo, open(pet_photo, 'rb'), 'image/jpeg')
         }
 
         res = requests.put(self.base_url + 'api/pets/' + pet_id, headers=headers, data=data)
