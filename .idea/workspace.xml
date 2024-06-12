@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e52dea7c-2187-49a6-96d6-fa8157f3d643" name="Changes" comment="4th">
+    <list default="true" id="e52dea7c-2187-49a6-96d6-fa8157f3d643" name="Changes" comment="5th">
       <change beforePath="$PROJECT_DIR$/../HW_24.7.2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HW_24.7.2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HW_24.7.2/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/../HW_24.7.2/api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HW_24.7.2/tests/test_pet_friends.py" beforeDir="false" afterPath="$PROJECT_DIR$/../HW_24.7.2/tests/test_pet_friends.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,10 +47,13 @@
     "Python tests.Python tests for test_pet_friends.test_api_add_photo_of_pet.executor": "Run",
     "Python tests.Python tests for test_pet_friends.test_api_add_photo_of_pet_unsupported_format.executor": "Run",
     "Python tests.Python tests for test_pet_friends.test_api_add_photo_of_pet_unsupported_format2.executor": "Run",
+    "Python tests.Python tests for test_pet_friends.test_failed_update_self_pet_info.executor": "Run",
     "Python tests.Python tests for test_pet_friends.test_get_all_pets_with_valid_key.executor": "Run",
     "Python tests.Python tests for test_pet_friends.test_get_api_key_for_invalid_user.executor": "Run",
     "Python tests.Python tests for test_pet_friends.test_get_api_key_for_valid_user.executor": "Run",
+    "Python tests.Python tests for test_pet_friends.test_successful_delete_id_pet.executor": "Run",
     "Python tests.Python tests for test_pet_friends.test_successful_delete_self_pet.executor": "Run",
+    "Python tests.Python tests for test_pet_friends.test_successful_delete_uncreated_pet.executor": "Run",
     "Python tests.Python tests for test_pet_friends.test_successful_update_self_pet_info.executor": "Run",
     "Python tests.Python tests for test_pet_friends.test_successful_update_self_pet_photo.executor": "Run",
     "Python tests.Python tests in test_pet_friends.py.executor": "Run",
@@ -63,7 +67,7 @@
       <recent name="C:\Users\mansion11\PycharmProjects\HW_24.7.2\tests\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_pet_friends.test_api_add_photo_of_pet_unsupported_format2">
+  <component name="RunManager" selected="Python tests.Python tests for test_pet_friends.test_get_all_pets_with_valid_key">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="HW_24.7.2" />
       <option name="ENV_FILES" value="" />
@@ -108,21 +112,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_pet_friends.test_add_new_pet_simple_with_invalid_data" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="HW_24.7.2" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../HW_24.7.2/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_pet_friends.test_add_new_pet_simple_with_invalid_data&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests for test_pet_friends.test_add_new_pet_with_valid_data" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="HW_24.7.2" />
       <option name="ENV_FILES" value="" />
@@ -153,7 +142,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_pet_friends.test_api_add_photo_of_pet_unsupported_format" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_pet_friends.test_failed_update_self_pet_info" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="HW_24.7.2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -164,11 +153,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_pet_friends.test_api_add_photo_of_pet_unsupported_format&quot;" />
+      <option name="_new_target" value="&quot;test_pet_friends.test_failed_update_self_pet_info&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_pet_friends.test_api_add_photo_of_pet_unsupported_format2" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_pet_friends.test_get_all_pets_with_valid_key" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="HW_24.7.2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -179,17 +168,32 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_pet_friends.test_api_add_photo_of_pet_unsupported_format2&quot;" />
+      <option name="_new_target" value="&quot;test_pet_friends.test_get_all_pets_with_valid_key&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_pet_friends.test_successful_delete_id_pet" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="HW_24.7.2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../HW_24.7.2/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_pet_friends.test_successful_delete_id_pet&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_pet_friends.test_api_add_photo_of_pet_unsupported_format2" />
+        <item itemvalue="Python tests.Python tests for test_pet_friends.test_get_all_pets_with_valid_key" />
         <item itemvalue="Python tests.Python tests for test_pet_friends.test_add_new_pet_with_valid_data" />
-        <item itemvalue="Python tests.Python tests for test_pet_friends.test_add_new_pet_simple_with_invalid_data" />
-        <item itemvalue="Python tests.Python tests for test_pet_friends.test_api_add_photo_of_pet_unsupported_format" />
+        <item itemvalue="Python tests.Python tests for test_pet_friends.test_successful_delete_id_pet" />
         <item itemvalue="Python tests.Python tests for test_pet_friends.test_api_add_photo_of_pet" />
+        <item itemvalue="Python tests.Python tests for test_pet_friends.test_failed_update_self_pet_info" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718192322827</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="5th">
+      <option name="closed" value="true" />
+      <created>1718196457747</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718196457747</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -257,7 +269,8 @@
     <MESSAGE value="second" />
     <MESSAGE value="trird" />
     <MESSAGE value="4th" />
-    <option name="LAST_COMMIT_MESSAGE" value="4th" />
+    <MESSAGE value="5th" />
+    <option name="LAST_COMMIT_MESSAGE" value="5th" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

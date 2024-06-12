@@ -108,7 +108,7 @@ class PetFriends:
             result = res.text
         return status, result
     def add_new_pet_simple(self, auth_key: json, name: str, animal_type: str,
-                    age: str) -> json:
+                    age: int) -> json:
         """Метод отправляет (постит) на сервер данные о добавляемом питомце и возвращает статус
         запроса на сервер и результат в формате JSON с данными добавленного питомца(без использования фотографии)"""
 
