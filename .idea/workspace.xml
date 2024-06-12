@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e52dea7c-2187-49a6-96d6-fa8157f3d643" name="Changes" comment="trird">
-      <change beforePath="$PROJECT_DIR$/../HW_24.7.2/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../HW_24.7.2/.env" afterDir="false" />
+    <list default="true" id="e52dea7c-2187-49a6-96d6-fa8157f3d643" name="Changes" comment="4th">
       <change beforePath="$PROJECT_DIR$/../HW_24.7.2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HW_24.7.2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_24.7.2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../HW_24.7.2/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_24.7.2/tests/images/P1040103.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_24.7.2/tests/images/cat1.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../HW_24.7.2/tests/test_pet_friends.py" beforeDir="false" afterPath="$PROJECT_DIR$/../HW_24.7.2/tests/test_pet_friends.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +44,8 @@
     "Python tests.Python tests for test_pet_friends.test_add_new_pet_with_valid_data.executor": "Run",
     "Python tests.Python tests for test_pet_friends.test_add_new_pet_with_valid_data_without_photo.executor": "Run",
     "Python tests.Python tests for test_pet_friends.test_api_add_photo_of_pet.executor": "Run",
+    "Python tests.Python tests for test_pet_friends.test_api_add_photo_of_pet_unsupported_format.executor": "Run",
+    "Python tests.Python tests for test_pet_friends.test_api_add_photo_of_pet_unsupported_format2.executor": "Run",
     "Python tests.Python tests for test_pet_friends.test_get_all_pets_with_valid_key.executor": "Run",
     "Python tests.Python tests for test_pet_friends.test_get_api_key_for_invalid_user.executor": "Run",
     "Python tests.Python tests for test_pet_friends.test_get_api_key_for_valid_user.executor": "Run",
@@ -65,7 +63,7 @@
       <recent name="C:\Users\mansion11\PycharmProjects\HW_24.7.2\tests\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_pet_friends.test_get_api_key_for_invalid_user">
+  <component name="RunManager" selected="Python tests.Python tests for test_pet_friends.test_api_add_photo_of_pet_unsupported_format2">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="HW_24.7.2" />
       <option name="ENV_FILES" value="" />
@@ -125,7 +123,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_pet_friends.test_add_new_pet_simple_with_valid_data" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_pet_friends.test_add_new_pet_with_valid_data" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="HW_24.7.2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -136,7 +134,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_pet_friends.test_add_new_pet_simple_with_valid_data&quot;" />
+      <option name="_new_target" value="&quot;test_pet_friends.test_add_new_pet_with_valid_data&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -155,7 +153,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_pet_friends.test_get_api_key_for_invalid_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_pet_friends.test_api_add_photo_of_pet_unsupported_format" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="HW_24.7.2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -166,11 +164,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_pet_friends.test_get_api_key_for_invalid_user&quot;" />
+      <option name="_new_target" value="&quot;test_pet_friends.test_api_add_photo_of_pet_unsupported_format&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_pet_friends.test_successful_update_self_pet_photo" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_pet_friends.test_api_add_photo_of_pet_unsupported_format2" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="HW_24.7.2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -181,17 +179,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_pet_friends.test_successful_update_self_pet_photo&quot;" />
+      <option name="_new_target" value="&quot;test_pet_friends.test_api_add_photo_of_pet_unsupported_format2&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_pet_friends.test_get_api_key_for_invalid_user" />
+        <item itemvalue="Python tests.Python tests for test_pet_friends.test_api_add_photo_of_pet_unsupported_format2" />
+        <item itemvalue="Python tests.Python tests for test_pet_friends.test_add_new_pet_with_valid_data" />
         <item itemvalue="Python tests.Python tests for test_pet_friends.test_add_new_pet_simple_with_invalid_data" />
+        <item itemvalue="Python tests.Python tests for test_pet_friends.test_api_add_photo_of_pet_unsupported_format" />
         <item itemvalue="Python tests.Python tests for test_pet_friends.test_api_add_photo_of_pet" />
-        <item itemvalue="Python tests.Python tests for test_pet_friends.test_successful_update_self_pet_photo" />
-        <item itemvalue="Python tests.Python tests for test_pet_friends.test_add_new_pet_simple_with_valid_data" />
       </list>
     </recent_temporary>
   </component>
@@ -243,14 +241,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718191010743</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="4th">
+      <option name="closed" value="true" />
+      <created>1718192322827</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718192322827</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
     <MESSAGE value="second" />
     <MESSAGE value="trird" />
-    <option name="LAST_COMMIT_MESSAGE" value="trird" />
+    <MESSAGE value="4th" />
+    <option name="LAST_COMMIT_MESSAGE" value="4th" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
