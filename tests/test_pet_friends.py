@@ -1,5 +1,5 @@
 from api import PetFriends
-from settings import valid_email, valid_password
+from settings import valid_email, valid_password, invalid_email, invalid_password
 import os
 
 pf = PetFriends()
@@ -102,10 +102,6 @@ def test_add_new_pet_simple_with_valid_data(name='Трэши', animal_type='не
     assert status == 200
     assert result['name'] == name
 
-def test_successful_update_self_pet_photo(pet_photo='images/cat1.jpg'):
-    """Проверяем возможность обновления информации о питомце"""
-
-
 def test_api_add_photo_of_pet(pet_photo='images/1.jpg'):
     # Получаем ключ auth_key и список своих питомцев
     _, auth_key = pf.get_api_key(valid_email, valid_password)
@@ -123,3 +119,33 @@ def test_api_add_photo_of_pet(pet_photo='images/1.jpg'):
     else:
         # если спиок питомцев пустой, то выкидываем исключение с текстом об отсутствии своих питомцев
         raise Exception("There is no my pets")
+
+def test_add_new_pet_simple_with_invalid_data(name='172', animal_type='нечто', age='5'):
+    """Проверяем что можно добавить питомца с корректными данными"""
+
+    # Запрашиваем ключ api и сохраняем в переменую auth_key
+    _, auth_key = pf.get_api_key(valid_email, valid_password)
+
+    # Добавляем питомца
+    status, result = pf.add_new_pet_simple(auth_key, name, animal_type, age)
+
+    # Сверяем полученный ответ с ожидаемым результатом
+    assert status == 200
+    assert result['name'] == name
+
+def test_get_api_key_for_invalid_user(email=invalid_email, password=invalid_password):
+    """ Задаем неверный логин/пароль и Проверяем что запрос api ключа возвращает статус 200 и в результате содержится слово key, а случае ошибки возвращает сообщение о неверном логине/пароле"""
+
+    # Отправляем запрос и сохраняем полученный ответ с кодом статуса в status, а текст ответа в result
+    status, result = pf.get_api_key(email, password)
+
+        #Сверяем статус код запроса(ответ должен быть с кодом 403)
+    if status != 200:
+        assert status == 403
+        raise Exception('Неверный логин/пароль')
+    #В случае ввода корреткных данных возвращаем токен авторизации
+    else:
+        assert status == 200
+        assert 'key' in result
+
+
